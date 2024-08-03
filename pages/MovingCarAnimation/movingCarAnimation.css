@@ -1,3 +1,119 @@
-h1{
-    background-color: green;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow:hidden;
+    animation: shakebody 10s infinite linear;
+}
+.sky {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.trees {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/trees.png);
+    background-size: cover;
+    position: absolute;
+    top: -144px;
+}
+
+.track {
+    height: 60vh;
+    width: 800vw;
+    background-image: url(images/track.png);
+    /* background-size:cover; */
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 70vh;
+    animation: carMove 16s infinite linear;
+
+}
+
+.car {
+    height: 100px;
+    width: 380px;
+    background-image: url(images/car_body.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    /* change thsi units */
+    left: 444px;
+    bottom: 30vh;
+    animation: shake 5s infinite linear;
+
+}
+
+.wheel {
+    /* put the commong details here from wheel1 and wheel2 */
+    /* fix left wheel */
+
+}
+
+.wheel1 img {
+    width: 77px;
+    position: relative;
+    top: 42px;
+    left: 42px;
+    animation: wheelRotation 1s infinite linear;
+}
+
+.wheel2 img {
+    width: 77px;
+    position: relative;
+    top: -39px;
+    left: 235px;
+    animation: wheelRotation 1s infinite linear;
+}
+
+@keyframes wheelRotation {
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes carMove {
+    100% {
+        transform: translateX(-500vw);
+    }
+
+}
+
+@keyframes shake {
+
+    0% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+
+}
+
+@keyframes shakebody {
+
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+
 }
