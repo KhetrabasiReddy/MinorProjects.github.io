@@ -1,2 +1,3 @@
 # MinorProjects.github.io
-Here I created a small projects to practice my html, css and js.
+I have created a small project to practice my HTML, CSS, and JavaScript skills.
+
