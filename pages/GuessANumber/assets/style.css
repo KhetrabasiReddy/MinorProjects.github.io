@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 300ms;
+}
+
+body {
+    background-image: linear-gradient(to right, #D8B5FF, #1EAE98);
+    padding:1rem;
+}
+.container{
+    border:5px groove rgb(199, 148, 199);
+    padding:calc(1rem + 0.5vw);
+    text-align: center;
+    min-width: 300px;
+}
+h1{
+    color:aliceblue ;
+}
+.prompt-panel{
+    border:1px white;
+    border-style: ridge;
+    margin:1rem 0;
+    color:white;
+    font-weight:900;
+    font-size:calc(1rem + 1vw);
+    visibility:hidden;
+}
+#number , .btn-check,#restart{
+    width: calc(4rem + 10vw);
+    padding:0.5rem;
+    font-size:calc(1rem + 1vw);
+    margin:1rem; 
+    color:aliceblue;
+}
+#number {
+    background-color: transparent;
+    border:2px  white double;
+}
+.btn-check,#restart{
+    cursor: pointer;
+    background-color: transparent;
+   
+    background-image: linear-gradient(60deg, #bb86f8, #0fb39a);
+    border: 2px outset white;
+    &:active{
+        border-style: inset;;
+    }
+}
